@@ -1,2 +1,3 @@
 # lista1-enp
-Lista 1 de EstatÃ­stica NÃ£o-ParamÃ©trica - 1/2015
+Lista 1 de Estatística Não-Paramétrica - 1/2015
+

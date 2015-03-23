@@ -1,0 +1,28 @@
+---
+title: "Lista 1 - Estatística Não-Paramétrica - 1/2015"
+author: "Augusto Cesar Ribeiro Nunes - 13/0103004"
+date: "23 de março de 2015"
+output: html_document
+---
+```{r preambulo}
+require(ggplot2)
+require(plyr)
+```
+
+# Questão 15
+_Use the data in Table 5.8 to create a kernel density estimate for each group of subjects. Do
+the estimated densities appear to represent the same underlying distribution?_ 
+
+Carregamento e descrição dos dados sobre os sujeitos dos Tipos A e B
+```{r dados}
+typeA <- c(3.6,2.6,4.7,8.0,3.1,8.8,4.6,5.8,4.0,4.6)
+typeB <- c(16.2,17.4,8.5,15.6,5.4,9.8,14.9,16.6,15.9,5.3,10.5)
+tab5.8<- data.frame(typeA,typeB)
+summary(typeA)
+summary(typeB)
+```
+
+Gráfico das duas densidades 
+```{r densidades}
+qplot(typeA, geom="density")
+```
